@@ -9,8 +9,8 @@ const Counter = () => {
   const dispatch=useDispatch()
   const counterval =  useSelector((state)=>state.count)
   return (
-    <div>
-      
+    <div className='container'>
+
       <button onClick={()=>dispatch(increment())}>+</button>
       <button onClick={()=>dispatch(decrement())}>-</button>
       <h1>{counterval}</h1>
